@@ -5,6 +5,8 @@ install.packages("dplyr")
 library(lubridate)
 library(dplyr)
 
+## Change the format type to TIMESTAMP because SQL doesn't recognize the schema when I upload the file due to the presence of AM or PM in the time. Therefore, I changed all the files with this issue to the 24-hour format.
+
 heartrate_seconds <- read.csv("../input/filesfitbit/heartrate_seconds_merged.csv")
 head(heartrate_seconds)
 heartrate_seconds <- heartrate_seconds %>%
