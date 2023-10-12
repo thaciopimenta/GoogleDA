@@ -7,7 +7,7 @@ The research made by Centers for Disease Control and Prevention (CDC) found that
 The CDC recommend adults to have at least 150 minutes a week or 21.43 minutes a day of moderate-intensity physical activity.
 
 57.57% of the users get more than 21.43 minutes of intensity exercise a day.
-![image](https://github.com/thaciopimenta/GoogleDA/assets/127606477/c23834b0-07cc-4213-aabe-d94c602dc8c2)
+![image](https://github.com/thaciopimenta/GoogleDA/assets/127606477/781dd885-b8e8-4d65-a091-77e38f9ae7eb)
 
 The CDC recommends adults to have at least 7 hours of sleep everyday.
 
