@@ -1,4 +1,15 @@
-As we can see
+
+The research made by Centers for Disease Control and Prevention (CDC) found that people who takes more than 12,000 steps per day was associated with a 65% lower risk compared with taking 4,000 steps and taking 8,000 steps per day was associated with a 51% lower risk for all-cause mortality compared with taking 4,000 steps.
+
+9.1% of the users reach the 12k steps mark, 33.33% with more than 8k and less than 12k steps, 39.4% between 4k and 8k steps and 18.17% is below 4k steps per day.
 ![image](https://github.com/thaciopimenta/GoogleDA/assets/127606477/a69cc857-1fd0-4146-95be-a0c52749ece5)
-https://public.tableau.com/app/profile/th.cio.pimenta7360/viz/GOOGLEDA1/Painel2
-<div class='tableauPlaceholder' id='viz1697125677546' style='position: relative'><noscript><a href='#'><img alt='Painel 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GO&#47;GOOGLEDA1&#47;Painel2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GOOGLEDA1&#47;Painel2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GO&#47;GOOGLEDA1&#47;Painel2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1697125677546');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+The CDC recommend adults to have at least 150 minutes a week or 21.43 minutes a day of moderate-intensity physical activity.
+
+57.57% of the users get more than 21.43 minutes of intensity exercise a day.
+![image](https://github.com/thaciopimenta/GoogleDA/assets/127606477/c23834b0-07cc-4213-aabe-d94c602dc8c2)
+
+The CDC recommends adults to have at least 7 hours of sleep everyday.
+
+Half of the users are getting 7 or more hours of sleep but there are some sleeping near 7 hours, 66.67% of the users sleeps more than 6 hours.
+![image](https://github.com/thaciopimenta/GoogleDA/assets/127606477/256cb71c-ffbc-4731-b3cb-92072fc1ebb2)
