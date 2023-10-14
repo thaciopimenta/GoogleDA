@@ -12,7 +12,7 @@ reporting data that helps guide Bellabeat’s marketing strategy.
 
 
 
-# Prepare, Process, Analyze
+# Prepare, Process, Analyze and Share
 ### 1 - First, I had to format the TIMESTAMP type in R so I could query it correctly using BigQuery.
 ##### The script is in [formatting.R](https://github.com/thaciopimenta/GoogleDA/blob/main/formatting.R)
 
