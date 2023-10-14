@@ -16,7 +16,7 @@ reporting data that helps guide Bellabeat’s marketing strategy.
 ### 1 - First, I had to format the TIMESTAMP type in R so I could query it correctly using BigQuery.
 ##### The script is in [formatting.R](https://github.com/thaciopimenta/GoogleDA/blob/main/formatting.R)
 
-### 2 - The queries aim to identify patterns related to daily activity, sleep, steps, days, and usage times.
+### 2 - The queries and explanations aim to identify patterns related to daily activity, sleep, steps, days, and usage times.
 ##### The script is in [SQL_QUERIES.sql](https://github.com/thaciopimenta/GoogleDA/edit/main/SQL_QUERIES.sql)
 
 ### 3 - The DataViz with the patterns found.
