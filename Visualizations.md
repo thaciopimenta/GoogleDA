@@ -1,3 +1,9 @@
+# Dashboard Links:
+ [Average By Users](https://public.tableau.com/app/profile/th.cio.pimenta7360/viz/GOOGLEDA2/Painel1)
+ 
+[Average By Day and Time](https://public.tableau.com/app/profile/th.cio.pimenta7360/viz/GOOGLEDA1/Painel2)
+
+
 # Steps
 The research made by Centers for Disease Control and Prevention (CDC) found that people who takes more than 12,000 steps per day was associated with a 65% lower risk compared with taking 4,000 steps and taking 8,000 steps per day was associated with a 51% lower risk for all-cause mortality compared with taking 4,000 steps.
 
