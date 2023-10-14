@@ -1,4 +1,4 @@
--- Quantos usuários únicos estão em cada planilha?
+-- How many unique users are in each table?
 SELECT
 COUNT(DISTINCT A.Id) as DailyActivity,
 COUNT(DISTINCT S.Id) as SleepActivity,
@@ -9,7 +9,7 @@ FULL JOIN Fitabase.sleepDay S ON A.Id = S.Id
 FULL JOIN Fitabase.weightLogInfo W ON A.Id = W.Id;
 -- 33 in DailyActivitu, 24 in SleepActivity and 8 in WeightActivity.
   
--- Passos, distâncias, e calorias média individual?
+-- Steps, distances, and individual average calories?
 SELECT DISTINCT Id,
  COUNT(Id) AS logs,
  AVG(TotalSteps) AS avg_steps,
@@ -23,7 +23,7 @@ FROM Fitabase.dailyactivity
 GROUP BY Id
 ORDER BY Id;
 
--- Há alguma tendencia de atividade ao longo do tempo?
+-- Is there any trend in activity over time?
 SELECT DISTINCT ActivityDate,
  AVG(TotalSteps) AS avg_steps,
  AVG(TotalDistance) AS avg_total_distance, 
@@ -36,7 +36,7 @@ FROM Fitabase.dailyactivity
 GROUP BY ActivityDate 
 ORDER BY ActivityDate;
 
--- Performance média individual
+-- Individual average performance.
   WITH stacked_data AS (
   SELECT
     Id,
@@ -77,7 +77,7 @@ GROUP BY
 ORDER BY
   Id, ActivityType;
 
--- Quantidade dos que fizeram mais de 30min por dia
+-- Number of individuals who exercised for more than 30 minutes per day.
 SELECT 
   Id,
   SUM(AvgVeryActiveMinutes + AvgFairlyActiveMinutes) AS TotalActiveMinutes
@@ -96,9 +96,9 @@ GROUP BY
   Id
 HAVING
   TotalActiveMinutes > 30;
--- 17 fizeram mais de 30min diário.
+-- Seventeen individuals exercised for more than 30 minutes daily.
 
--- Quais dias tem mais atividades
+-- Which days have the most activities?
 SELECT
 FORMAT_DATE('%A', DATE(ActivityDate)) as Day,
  AVG(TotalSteps) AS avg_steps,
@@ -122,7 +122,7 @@ WHEN Day = 'Saturday' THEN 7
      END ASC;
 -- Monday, Tuesday and Saturday
 
--- Quais horários tem mais intensidade
+-- Which hours have the highest intensity?
 SELECT
   DISTINCT TIME(ActivityHour) as Time,
   FORMAT_DATE('%A', DATE(ActivityHour)) as Day,
@@ -140,7 +140,7 @@ WHEN Day = 'Friday' THEN 6
 WHEN Day = 'Saturday' THEN 7
      END ASC;
 
--- Quantos Id's passos estão na faixa?
+-- How many step Id's are in the range?
 SELECT 
     SUM(CASE WHEN avg_steps > 12000 THEN 1 ELSE 0 END) AS steps_gt_12000,
     SUM(CASE WHEN avg_steps BETWEEN 8000 AND 12000 THEN 1 ELSE 0 END) AS steps_between_8000_12000,
@@ -154,7 +154,7 @@ FROM (
     GROUP BY Id
 ) AS subquery;
 
--- Quanto os passos variam por horário e dia
+-- How do the steps vary by time and day?
 SELECT 
     DISTINCT TIME(ActivityHour) as Time,
     FORMAT_DATE('%A', DATE(ActivityHour)) as Day,
@@ -171,9 +171,9 @@ ORDER BY
     WHEN Day = 'Friday' THEN 6      
     WHEN Day = 'Saturday' THEN 7      
  END ASC;
--- 12 às 14 e 17 às 19h
+-- 12-14h and 17-19h
 
--- Sono individual?
+-- Individual sleep?
 SELECT *,
 (avg_min_asleep/60) AS avg_hour_asleep     
 FROM (      
@@ -183,7 +183,7 @@ FROM (
  GROUP BY Id      
  ORDER BY Id );
 
---- Quantos tem mais de 7h de sono
+--- How many people have more than 7 hours of sleep?
 SELECT
   Id,
   AVG(TotalMinutesAsleep/60) as AvgSleep
@@ -195,7 +195,7 @@ HAVING
   AvgSleep > 7;
 -- 50%
 
--- Quais dias tem mais ou menos sono?
+-- Which days have more or less sleep?
 SELECT 
     FORMAT_DATE('%A', DATE(sleepDay.SleepDay)) as Day, 
     COUNT(*) AS number_of_days,
@@ -217,7 +217,7 @@ WHEN Day = 'Friday' THEN 6
 WHEN Day = 'Saturday' THEN 7      
  END ASC;
 
--- Há alguma tendencia de sono ao longo do tempo?
+-- Is there any sleep trend over time?
 SELECT *,
 (avg_min_asleep/60) AS avg_hour_asleep ## Add column with minutes asleep converted to hours
 FROM (
@@ -229,13 +229,4 @@ FROM (
  FROM Fitabase.sleepDay S  
  GROUP BY SleepDay  ## Results in user ids being grouped into single average entry for each date
  ORDER BY SleepDay ) ;
-
--- Qual a média de peso e quantas vezes foi logado
-SELECT 
- DISTINCT Id,
- AVG(WeightPounds) AS avg_weight_lbs,
- AVG(BMI) AS avg_BMI
-FROM Fitabase.weightLogInfo
-GROUP BY Id
-ORDER BY Id;
 
