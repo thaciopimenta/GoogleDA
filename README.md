@@ -12,7 +12,7 @@ reporting data that helps guide Bellabeat’s marketing strategy.
 
 
 
-# Prepare, Process, Analyze and Share
+# Prepare, Process, Analyze and Share:
 ### 1 - First, I had to format the TIMESTAMP type in R so I could query it correctly using BigQuery.
 ##### The script is in [formatting.R](https://github.com/thaciopimenta/GoogleDA/blob/main/formatting.R)
 
@@ -21,3 +21,9 @@ reporting data that helps guide Bellabeat’s marketing strategy.
 
 ### 3 - The DataViz with the patterns found.
 ##### The script is in [Visualizations.md](https://github.com/thaciopimenta/GoogleDA/blob/main/Visualizations.md)
+
+
+# Act (Recommendations):
+..* A lot of users are close to reaching the CDC recommendations for daily steps, daily minutes, and sleep.
+
+So, if we add a feature for them to set a specific goal and provide them with some encouragement alongside, we can do this by focusing on the hour before their usual workout or in the evening, informing them about how many hours they slept and whether it is below or above the CDC recommendations.
