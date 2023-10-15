@@ -7,6 +7,7 @@ This is the case study for the Google Data Analytics Professional Capstone Progr
 Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer.
 
 Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
+
 Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and
 reporting data that helps guide Bellabeat’s marketing strategy.
 
